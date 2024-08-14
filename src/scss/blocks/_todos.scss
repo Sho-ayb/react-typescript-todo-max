@@ -14,14 +14,19 @@ body {
           font-size: variables.$font-size-lg;
           font-weight: 300;
           background-color: variables.$color-anchors-whitesmoke;
-          padding: 0 variables.$spacing-md;
+          padding: 0 variables.$spacing-sm variables.$spacing-sm;
           margin-bottom: variables.$spacing-xl;
           border-radius: 4px;
           box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
           display: flex;
+          flex-direction: column;
           justify-content: space-between;
           align-items: center;
           overflow: hidden;
+
+          @media (width >= 48rem) {
+            flex-direction: row;
+          }
 
           span {
             flex: 1;
@@ -33,9 +38,14 @@ body {
           button {
             font-size: variables.$font-size-sm;
             padding: variables.$spacing-sm variables.$spacing-lg;
-            background-color: variables.$color-background-dark-2;
+            background-color: variables.$color-background-dark-1;
             color: variables.$color-text-light-3;
             cursor: pointer;
+
+            &:hover {
+              color: variables.$color-button-text-red;
+              background-color: variables.$color-background-dark-2;
+            }
           }
         }
       }

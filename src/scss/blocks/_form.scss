@@ -38,9 +38,14 @@ body {
           font-size: variables.$font-size-sm;
           float: right;
           padding: variables.$spacing-md variables.$spacing-lg;
-          background-color: variables.$color-background-dark-2;
+          background-color: variables.$color-background-dark-1;
           color: variables.$color-text-light-3;
           cursor: pointer;
+
+          &:hover {
+            color: variables.$color-button-text-green;
+            background-color: variables.$color-background-dark-2;
+          }
 
           @media (width >= 48rem) {
             width: 12rem;
