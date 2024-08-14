@@ -7,6 +7,10 @@ body {
         width: 100%;
         min-height: 55%;
 
+        @media (width >= 48rem) {
+          width: 55%;
+        }
+
         &-input {
           width: 100%;
           font-size: variables.$font-size-lg;
@@ -49,6 +53,7 @@ body {
 
           @media (width >= 48rem) {
             width: 12rem;
+            padding: variables.$spacing-sm variables.$spacing-md;
           }
         }
       }
