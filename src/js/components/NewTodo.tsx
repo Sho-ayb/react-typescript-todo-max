@@ -6,7 +6,7 @@ interface NewTodoProps {
 
 const NewTodo: React.FC<NewTodoProps> = (props) => {
   // we initial a useRef hook here
-  const textInputRef = useRef<HTMLInputElement>(null);
+  const textInputRef = useRef<HTMLTextAreaElement>(null);
 
   const clearInput = () => {
     textInputRef.current!.value = '';
@@ -24,16 +24,19 @@ const NewTodo: React.FC<NewTodoProps> = (props) => {
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
-      <div>
+    <form
+      id='form-control'
+      className='form__control'
+      onSubmit={onSubmitHandler}
+    >
+      <div className='form__control-input'>
         <label htmlFor='todo-text'>Todo Text</label>
-        <input
-          type='text'
+        <textarea
           id='todo-text'
+          className='form__control-input-textarea'
           ref={textInputRef}
-          aria-rowspan={5}
-          aria-colspan={5}
-        />
+          rows={5}
+        ></textarea>
       </div>
       <button type='submit'>ADD TODO</button>
     </form>

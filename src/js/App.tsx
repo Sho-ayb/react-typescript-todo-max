@@ -36,7 +36,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className='App'>
+    <div className='app'>
       <NewTodo onAddTodo={todoAddHandler} />
       <TodoList items={todos} onDeleteTodo={todoDeleteHandler} />
     </div>

@@ -1,0 +1,52 @@
+@use "../base/variables" as variables;
+
+body {
+  .main {
+    .app {
+      .form__control {
+        width: 100%;
+        min-height: 55%;
+
+        &-input {
+          width: 100%;
+          font-size: variables.$font-size-lg;
+          padding: variables.$spacing-md 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+
+          @media (width >= 48rem) {
+            flex-direction: row;
+            align-items: center;
+          }
+
+          label {
+            font-size: variables.$font-size-lg;
+            font-weight: 300;
+            margin-right: variables.$spacing-md;
+          }
+
+          &-textarea {
+            @media (width >= 48rem) {
+              width: 83%;
+            }
+          }
+        }
+
+        button {
+          width: 100%;
+          font-size: variables.$font-size-sm;
+          float: right;
+          padding: variables.$spacing-md variables.$spacing-lg;
+          background-color: variables.$color-background-dark-2;
+          color: variables.$color-text-light-3;
+          cursor: pointer;
+
+          @media (width >= 48rem) {
+            width: 12rem;
+          }
+        }
+      }
+    }
+  }
+}

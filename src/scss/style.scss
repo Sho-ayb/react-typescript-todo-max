@@ -2,3 +2,14 @@
 
 @use "base/reset";
 @use "base/variables";
+
+// Components
+
+@use "./components/header";
+@use "./components/main";
+@use "./components/footer";
+
+// Blocks
+
+@use "./blocks/form";
+@use "./blocks/todos";

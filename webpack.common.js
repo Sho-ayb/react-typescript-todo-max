@@ -12,12 +12,6 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'build'),
     },
-    client: {
-      logging: 'info',
-      webSocketURL: 'ws://localhost:9000/ws',
-      webSocketTransport: 'ws',
-    },
-    webSocketServer: 'ws',
     hot: true,
     port: 9000,
     compress: true,

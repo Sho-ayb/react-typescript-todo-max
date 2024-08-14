@@ -1,0 +1,44 @@
+@use "../base/variables" as variables;
+
+body {
+  .app {
+    .todos {
+      &__list {
+        width: 100%;
+
+        // min-height: fit-content;
+
+        > li {
+          width: 100%;
+          min-height: 5rem;
+          font-size: variables.$font-size-lg;
+          font-weight: 300;
+          background-color: variables.$color-anchors-whitesmoke;
+          padding: 0 variables.$spacing-md;
+          margin-bottom: variables.$spacing-xl;
+          border-radius: 4px;
+          box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          overflow: hidden;
+
+          span {
+            flex: 1;
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+            padding: variables.$spacing-md;
+          }
+
+          button {
+            font-size: variables.$font-size-sm;
+            padding: variables.$spacing-sm variables.$spacing-lg;
+            background-color: variables.$color-background-dark-2;
+            color: variables.$color-text-light-3;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
