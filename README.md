@@ -5,6 +5,7 @@
 [Project Title](#project-title)<br>
 [Description](#description)<br>
 [Snapshot](#snapshot)<br>
+[Deployed](#deployed)<br>
 [Github](#github)<br>
 [LinkedIn](#linkedin)<br>
 [Licence](#licence)
@@ -20,6 +21,10 @@ This is part of a complete course by Max Schwarzmuller titled Understanding Type
 ## Snapshot
 
 ![Demo Todo Application](./demo-todo-app-snapshot.PNG)
+
+## Deployed
+
+[Demo Todo Application](https://sho-ayb.github.io/react-typescript-todo-max/)
 
 ## Github
 
